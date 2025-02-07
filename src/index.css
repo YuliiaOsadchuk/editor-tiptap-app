@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #f7f2ff;
+  border-radius: 0.4rem;
+  color: black;
+  font-size: 0.85rem;
+  padding: 0.25em 0.3em;
+}
+
+.ProseMirror {
+  width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
