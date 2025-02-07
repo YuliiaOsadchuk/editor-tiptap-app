@@ -1,25 +1,27 @@
+@import 'variables.less';
+
 .editorContent {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: @width-full;
   height: 56px;
-  border: 1px solid #dddcdd;
-  border-radius: 16px;
-  background-color: #f8f8f8;
-  color: #000000;
-  padding: 0 8px;
+  border: 1px solid @input-border;
+  border-radius: @border-radius;
+  background-color: @primary-color;
+  color: @black;
+  padding: @padding-none @padding-sm;
 }
 
 .adornment {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: @padding-sm;
 }
 
 .adornment > div {
-  width: 100%;
+  width: @width-full;
 }
 
 .input {
