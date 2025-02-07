@@ -49,7 +49,7 @@ const EditorPage = () => {
           <EditorContent
             editor={editor}
             newLink={newLink}
-            setNewLink={setNewLink}
+            onLinkChange={setNewLink}
             showLinkInput={showLinkInput}
             onBlur={handleInputBlur}
           />

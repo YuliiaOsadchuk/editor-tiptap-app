@@ -11,7 +11,7 @@ import styles from './EditorContent.module.less';
 interface EditorContentPros {
   editor: Editor;
   newLink: string;
-  setNewLink: (link: string) => void;
+  onLinkChange: (link: string) => void;
   showLinkInput: boolean;
   onBlur: () => void;
 }
@@ -19,7 +19,7 @@ interface EditorContentPros {
 const EditorContent: React.FC<EditorContentPros> = ({
   editor,
   newLink,
-  setNewLink,
+  onLinkChange,
   showLinkInput,
   onBlur,
 }) => (
@@ -33,7 +33,7 @@ const EditorContent: React.FC<EditorContentPros> = ({
           <Input
             placeholder="Enter url"
             value={newLink}
-            onChange={e => setNewLink(e.target.value)}
+            onChange={e => onLinkChange(e.target.value)}
             onBlur={onBlur}
           />
         </div>
